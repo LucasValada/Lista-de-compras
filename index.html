@@ -26,14 +26,14 @@
     <main>
       <div class="container">
         <div class="itens-menu">
-          <figure class="logo"></figure>
+          <img src="./assets/icons/logoMenu.svg" alt="logo icone" />
           <span>quicklist</span>
         </div>
       </div>
     </main>
     <div class="container">
       <section class="voltar">
-        <img src="" alt="svg de voltar" />
+        <img src="./assets/icons/voltar.svg" alt="svg de voltar" />
         <a href="#">Voltar</a>
       </section>
       <section class="compras">
@@ -44,9 +44,14 @@
             <input
               placeholder="Adicione um novo item"
               type="text"
+              name="novoItem"
               class="field-adicionar col-12 col-lg-8"
             />
-            <button type="submit" class="btn-adicionar col-12 col-lg-4">
+            <button
+              type="submit"
+              id="novoItem"
+              class="btn-adicionar col-12 col-lg-4"
+            >
               Adicionar item
             </button>
 
@@ -54,13 +59,24 @@
               <li>
                 <input type="checkbox" name="checkbox" id="checked" />
                 <span>Pão de forma</span>
-                <img src="" alt="icone de lixeira" id="excluir" />
+                <img
+                  src="./assets/icons/lixeira.svg"
+                  alt="icone de lixeira"
+                  id="excluir"
+                />
               </li>
             </ul>
 
             <div class="error">
-              <img src="" alt="Icone de informação" />
+              <img src="./assets/icons/alert.svg" alt="Icone de informação" />
               <p>O item foi removido da lista!</p>
+              <img id="fechar" src="./assets/icons/fechar.svg" alt="" />
+            </div>
+
+            <div class="sucesso">
+              <img src="./assets/icons/alert.svg" alt="Icone de informação" />
+              <p>O item foi adicionado na lista!</p>
+              <img id="fechar" src="./assets/icons/fechar.svg" alt="" />
             </div>
           </div>
         </form>

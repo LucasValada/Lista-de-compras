@@ -23,7 +23,7 @@
   --font-family-base: "Inter", sans-serif;
 
   /* Title */
-  --font-title-size: 24px;
+  --font-title-size: 28px;
   --font-title-line-height: 32px;
   --font-title-weight: 700; /* Bold */
 
@@ -45,4 +45,92 @@
 body {
   background-color: var(--background-primary);
   font-family: var(--font-family-base);
+}
+.itens-menu {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px 64px;
+  align-items: center;
+  gap: 6px;
+  span {
+    font-size: var(--font-title-size);
+    font-weight: var(--font-title-weight);
+    line-height: var(--font-title-line-height);
+    color: var(--content-secondary);
+  }
+}
+.voltar {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  padding-bottom: 16px;
+  a {
+    font-size: var(--font-link-size);
+    font-weight: var(--font-link-weight);
+    line-height: var(--font-link-line-height);
+    color: var(--color-brand);
+    text-decoration: none;
+  }
+}
+
+.compras {
+  h1 {
+    font-size: var(--font-title-size);
+    font-weight: var(--font-title-weight);
+    line-height: var(--font-title-line-height);
+    color: var(--content-primary);
+    padding-bottom: 32px;
+  }
+}
+.formulario {
+  ul.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0px;
+  }
+  ul.lista > li {
+    position: relative;
+    background-color: var(--background-secondary);
+    list-style: none;
+    padding: 10px 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--content-secondary);
+    font-weight: var(--font-paragraph-weight);
+    img {
+      justify-content: end;
+      position: absolute;
+      right: 22px;
+      cursor: pointer;
+    }
+  }
+}
+
+.error,
+.sucesso {
+  background-color: var(--color-danger);
+  border-radius: 15px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  p {
+    margin: 0;
+    color: var(--always-white);
+    font-weight: var(--font-paragraph-weight);
+    line-height: var(--font-paragraph-line-height);
+  }
+  #fechar {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+.sucesso {
+  background-color: #239c50;
+  margin-top: 16px;
 }
